@@ -5,8 +5,8 @@ default: &default
   min_messages: WARNING
   pool: 5
   timeout: 5000
-  username: ENV['DATABASE_USERNAME']
-  password: ENV['DATABASE_PASSWORD']
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 development:
   <<: *default
